@@ -30,10 +30,7 @@ func boring(msg string) <-chan string { // Returns receive-only channel of strin
 	}()
 	return c // Return the channel to the caller.
 }
-// STOP2 OMIT
 
-
-// START3 OMIT
 func fanIn(input1, input2 <-chan string) <-chan string {
 	c := make(chan string)
 	go func() {

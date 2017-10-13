@@ -10,7 +10,6 @@ func main() {
 	boring("boring!")
 }
 
-// START OMIT
 func boring(msg string) {
 	for i := 0; ; i++ {
 		fmt.Println(msg, i)
